@@ -1,7 +1,75 @@
-.forehead {
-    display: block;
-    position: sticky;
+body {
+    display: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
+
+
+
+/* all forehead styling*/
+.forehead {
+    display: flex;
+    position: sticky;
+    font-family: monospace;
+    width: 100%;
+}
+    .title {
+        display: inline-block;
+        align-items: center;
+        margin: 7px;
+    }
+        h1 {
+            font-size: 36px;
+            font-family: monospace;
+            text-decoration: none;
+            color: black;
+        }
+    .menus {
+        display: flex;
+        align-items: bottom;
+        justify-content: center;
+        position: relative;
+        font-size: 16px;
+        margin: 5px;
+    }
+        .link {
+            display: flex;
+            justify-content: right;
+            font-family: monospace;
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+                
+        }
+
+
+
+/* unused header*/
 .header {
     font-family: monospace;
 }
+
+
+
+
+
+/* all content styling*/
+.photo-scroll {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    width: 50vw;
+    overflow: hidden;
+    margin: 20px;
+}
+    .photo-scroll img {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-height: 2000px;
+        justify-items: center;
+        align-items: center;
+    }
