@@ -1,5 +1,5 @@
 body {
-    display: relative;
+    display: absolute;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -18,6 +18,7 @@ body {
         display: inline-block;
         align-items: center;
         margin: 7px;
+        position: relative;
     }
         h1 {
             font-size: 36px;
@@ -27,15 +28,17 @@ body {
         }
     .menus {
         display: flex;
+        float: right;
         align-items: bottom;
-        justify-content: center;
+        justify-content: right;
         position: relative;
         font-size: 16px;
         margin: 5px;
     }
         .link {
             display: flex;
-            justify-content: right;
+            position: relative;
+            float: right;
             font-family: monospace;
             text-decoration: none;
             color: black;
@@ -55,6 +58,11 @@ body {
 
 
 /* all content styling*/
+.content {
+    width: 100%;
+    display: block;
+    position: absolute;
+}
 .photo-scroll {
     position: relative;
     display: flex;
@@ -65,11 +73,9 @@ body {
     margin: 20px;
 }
     .photo-scroll img {
-        position: relative;
-        display: flex;
         width: 100%;
         height: auto;
-        max-height: 2000px;
+        max-height: 7000px;
         justify-items: center;
         align-items: center;
     }
